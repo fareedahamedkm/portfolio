@@ -261,7 +261,7 @@ function App() {
             </div>
             <div className="flex justify-center space-x-6">
               <SocialLink href="https://github.com" icon={<Github />} label="GitHub" />
-              <SocialLink href="https://linkedin.com" icon={<Linkedin />} label="LinkedIn" />
+              <SocialLink href="https://www.linkedin.com/in/fareed-ahamed-k-m-46915028b/" icon={<Linkedin />} label="LinkedIn" />
               <SocialLink href="mailto:fareedahamed@gmail.com" icon={<Mail />} label="Email" />
             </div>
           </div>
