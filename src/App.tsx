@@ -221,6 +221,12 @@ function App() {
             </div>
             <div className="space-y-6">
               <CertificationCard
+                title="Fortinet Certified Associate  (FCA)"
+                issuer="Fortinet"
+                icon={<Terminal className="w-6 h-6" />}
+                date="2025"
+             />
+              <CertificationCard
                 title="Introduction to Networking"
                 issuer="Cisco"
                 icon={<Network className="w-6 h-6" />}
@@ -230,14 +236,10 @@ function App() {
                 title="Introduction to Cybersecurity"
                 issuer="Cisco"
                 icon={<Shield className="w-6 h-6" />}
-                date="2023"
-              />
-              <CertificationCard
-                title="Fortinet Certified Fundamentals (FCF)"
-                issuer="Fortinet"
-                icon={<Terminal className="w-6 h-6" />}
                 date="2024"
               />
+              
+              
             </div>
           </div>
         </div>
