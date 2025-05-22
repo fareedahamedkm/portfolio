@@ -119,13 +119,15 @@ function App() {
           <SectionTitle>About Me</SectionTitle>
           <div className="max-w-4xl mx-auto bg-gradient-to-br from-[#0F1A2E]/80 to-[#1B2C4B]/80 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-indigo-500/20">
             <p className="text-gray-300 leading-relaxed mb-6 text-lg">
-            I am a second-year Computer Engineering student at Rajalakshmi Engineering College (Class of 2027), driven by a focused ambition to become a Cybersecurity Architect. My interests span the critical pillars of modern IT—cybersecurity, computer networking, and IT infrastructure management.
+           I am a second-year Computer Engineering student at Rajalakshmi Engineering College (Class of 2027), with a deep interest in building intelligent, resilient, and forward-thinking technology solutions. While my long-term goal is to become a Cybersecurity Architect, my expertise and passion extend across a wide range of disciplines—from software development, AI/ML model training, and task automation, to IoT systems, computer vision, and secure infrastructure design.
 
-In a digital era defined by rapid technological advancement and rising threats, I aim to design and implement secure, scalable, and resilient systems that stand the test of real-world complexity. I bring a strong foundation in networking concepts, system administration, and security principles—strengthened through self-initiated research, continuous learning, and project development.
+I see myself not just as a learner, but as a problem-solver and builder—someone who connects dots across domains to deliver meaningful, scalable outcomes. I approach projects holistically: blending security, performance, and innovation to create solutions that can handle real-world complexity.
 
-As an innovationist, I go beyond traditional learning. I actively work on projects that integrate modern security strategies with practical implementation—ranging from secure server deployment and domain configuration to intrusion detection and remote management solutions. My technical journey is backed by a growing portfolio of hands-on projects and a roadmap of industry certifications that validate my skills and commitment.
+As an innovationist, I take initiative beyond the classroom—designing and building self-driven projects that tackle practical challenges in cybersecurity, smart systems, and digital automation. Whether it's developing AI-based analysis tools, automated infrastructure deployments, or privacy-aware IoT monitoring systems, my work reflects a mindset focused on cross-domain integration and technical depth.
 
-I value precision, resilience, and clarity in design—traits essential for a future architect responsible for critical digital systems. I’m currently sharpening my expertise in areas like network defense, enterprise security architecture, virtualization, and cloud computing, while staying aligned with industry standards and emerging innovations.
+I value precision, resilience, and clarity in architecture—qualities I continue to develop through hands-on practice, industry certifications, and research. With one foot firmly grounded in cybersecurity, and the other exploring the future of intelligent systems, I aim to engineer solutions that are not only secure, but also smart, adaptive, and impactful.
+
+
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
               <StatCard number="3+" label="Projects Completed" />
@@ -220,7 +222,7 @@ I value precision, resilience, and clarity in design—traits essential for a fu
               <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
                 Rajalakshmi Engineering College
               </h3>
-              <p className="text-gray-300 text-lg">B.E. Computer Engineering (2023 - 2027)</p>
+              <p className="text-gray-300 text-lg">B.E. Computer Science And Engineering (2023 - 2027)</p>
             </div>
             <div className="space-y-6">
               <CertificationCard
@@ -276,7 +278,7 @@ I value precision, resilience, and clarity in design—traits essential for a fu
       {/* Footer */}
       <footer className="py-8 relative bg-[#0B1120]/90">
         <div className="container mx-auto px-4 text-center text-gray-400">
-          <p>© 2024 Fareed Ahamed KM. All rights reserved.</p>
+          <p>© 2025 Fareed Ahamed KM. All rights reserved.</p>
         </div>
       </footer>
     </div>
