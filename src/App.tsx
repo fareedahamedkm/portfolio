@@ -10,7 +10,11 @@ import {
   Terminal,
   ChevronDown,
   ExternalLink,
-  Download
+  Download,
+  Brain,
+  Eye,
+  Cpu,
+  Workflow
 } from 'lucide-react';
 
 function App() {
@@ -148,46 +152,89 @@ function App() {
       <section id="skills" className="py-32 relative">
         <div className="container mx-auto px-4">
           <SectionTitle>Skills & Expertise</SectionTitle>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <SkillCard 
-              icon={<Shield className="w-8 h-8 text-blue-400" />}
-              title="Cybersecurity"
-              skills={[
-                "Intrusion Detection",
-                "Vulnerability Assessment",
-                "Firewall Configuration"
-              ]}
-            />
-            <SkillCard 
-              icon={<Network className="w-8 h-8 text-green-400" />}
-              title="Networking"
-              skills={[
-                
-                "Subnetting",
-                "VLANs",
-                "DHCP & DNS"
-              ]}
-            />
-            <SkillCard 
-              icon={<Server className="w-8 h-8 text-purple-400" />}
-              title="System Administration"
-              skills={[
-                "Windows Server",
-                "Linux (Ubuntu)",
-                "Active Directory",
-                "Domain Services"
-              ]}
-            />
-            <SkillCard 
-              icon={<Database className="w-8 h-8 text-yellow-400" />}
-              title="Cloud Technologies"
-              skills={[
-                "Office 365 Administration",
-                "Domain Migration",
-                "VMware ESXi",
-                "IT Infrastructure"
-              ]}
-            />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="space-y-8">
+              <SkillCard 
+                icon={<Shield className="w-8 h-8 text-blue-400" />}
+                title="Cybersecurity"
+                skills={[
+                  "Intrusion Detection",
+                  "Vulnerability Assessment",
+                  "Firewall Configuration"
+                ]}
+              />
+              <SkillCard 
+                icon={<Network className="w-8 h-8 text-green-400" />}
+                title="Networking"
+                skills={[
+                  "Subnetting",
+                  "VLANs",
+                  "DHCP & DNS"
+                ]}
+              />
+              <SkillCard 
+                icon={<Server className="w-8 h-8 text-purple-400" />}
+                title="System Administration"
+                skills={[
+                  "Windows Server",
+                  "Linux (Ubuntu)",
+                  "Active Directory",
+                  "Domain Services"
+                ]}
+              />
+              <SkillCard 
+                icon={<Database className="w-8 h-8 text-yellow-400" />}
+                title="Cloud Technologies"
+                skills={[
+                  "Office 365 Administration",
+                  "Domain Migration",
+                  "VMware ESXi",
+                  "IT Infrastructure"
+                ]}
+              />
+            </div>
+            <div className="space-y-8">
+              <SkillCard 
+                icon={<Brain className="w-8 h-8 text-pink-400" />}
+                title="Emerging Technologies & AI/ML"
+                skills={[
+                  "Artificial Intelligence",
+                  "Machine Learning",
+                  "Neural Networks",
+                  "Model Training"
+                ]}
+              />
+              <SkillCard 
+                icon={<Eye className="w-8 h-8 text-indigo-400" />}
+                title="Computer Vision & IoT"
+                skills={[
+                  "Computer Vision Applications",
+                  "ESP32-Based Sensor Systems",
+                  "IoT Integration",
+                  "Sensor Networks"
+                ]}
+              />
+              <SkillCard 
+                icon={<Workflow className="w-8 h-8 text-orange-400" />}
+                title="Automation & Smart Systems"
+                skills={[
+                  "Smart Detection Systems",
+                  "Process Automation",
+                  "System Integration",
+                  "Monitoring Solutions"
+                ]}
+              />
+              <SkillCard 
+                icon={<Cpu className="w-8 h-8 text-teal-400" />}
+                title="Software Development"
+                skills={[
+                  "Secure & Scalable Design",
+                  "Cross-domain Integration",
+                  "Solution Architecture",
+                  "Rapid Prototyping"
+                ]}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -223,34 +270,55 @@ function App() {
       <section id="education" className="py-32 relative">
         <div className="container mx-auto px-4">
           <SectionTitle>Education & Certifications</SectionTitle>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-br from-[#0F1A2E]/80 to-[#1B2C4B]/80 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-indigo-500/20 mb-12">
-              <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-                Rajalakshmi Engineering College
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            {/* Education Column */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                Education
               </h3>
-              <p className="text-gray-300 text-lg">B.E. Computer Science And Engineering (2023 - 2027)</p>
+              <div className="bg-gradient-to-br from-[#0F1A2E]/80 to-[#1B2C4B]/80 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-indigo-500/20">
+                <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                  Rajalakshmi Engineering College
+                </h3>
+                <p className="text-gray-300 text-lg mb-2">B.E. Computer Science And Engineering</p>
+                <p className="text-gray-400">2023 - 2027</p>
+                <div className="mt-4 p-4 bg-gray-800/50 rounded-lg">
+                  <p className="text-gray-300">Currently pursuing second year with focus on:</p>
+                  <ul className="list-disc list-inside mt-2 text-gray-400">
+                    <li>Computer Networks</li>
+                    <li>Information Security</li>
+                    <li>System Architecture</li>
+                    <li>Software Engineering</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className="space-y-6">
-              <CertificationCard
-                title="Fortinet Certified Associate  (FCA)"
-                issuer="Fortinet"
-                icon={<Terminal className="w-6 h-6" />}
-                date="2025"
-             />
-              <CertificationCard
-                title="Introduction to Networking"
-                issuer="Cisco"
-                icon={<Network className="w-6 h-6" />}
-                date="2023"
-              />
-              <CertificationCard
-                title="Introduction to Cybersecurity"
-                issuer="Cisco"
-                icon={<Shield className="w-6 h-6" />}
-                date="2024"
-              />
-              
-              
+
+            {/* Certifications Column */}
+            <div>
+              <h3 className="text-2xl font-bold mb-6 text-center bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                Certifications
+              </h3>
+              <div className="space-y-4">
+                <CertificationCard
+                  title="Fortinet Certified Associate (FCA)"
+                  issuer="Fortinet"
+                  icon={<Terminal className="w-6 h-6" />}
+                  date="2025"
+                />
+                <CertificationCard
+                  title="Introduction to Networking"
+                  issuer="Cisco"
+                  icon={<Network className="w-6 h-6" />}
+                  date="2023"
+                />
+                <CertificationCard
+                  title="Introduction to Cybersecurity"
+                  issuer="Cisco"
+                  icon={<Shield className="w-6 h-6" />}
+                  date="2024"
+                />
+              </div>
             </div>
           </div>
         </div>
