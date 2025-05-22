@@ -463,5 +463,3 @@ function CertificationCard({ title, issuer, icon, date }) {
 }
 
 export default App;
-
-export default App
