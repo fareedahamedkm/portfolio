@@ -103,7 +103,7 @@ function App() {
               Fareed Ahamed KM
             </h1>
             <p className="text-xl md:text-3xl text-gray-300 mb-8 font-light">
-              Aspiring Cybersecurity Criminal | Building Secure and Scalable IT Solutions
+              Aspiring Cybersecurity Architect | Building Secure and Scalable IT Solutions
             </p>
             <div className="flex justify-center space-x-6 mb-12">
               <SocialLink href="https://github.com" icon={<Github />} label="GitHub" />
