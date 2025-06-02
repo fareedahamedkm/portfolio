@@ -14,8 +14,11 @@ import {
   Brain,
   Eye,
   Cpu,
-  Workflow
+  Workflow,
+  BookOpen
 } from 'lucide-react';
+import { Link } from 'react-router-dom';
+import blogData from './data/blogs.json';
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,8 +29,7 @@ function App() {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
       
-      // Update active section based on scroll position
-      const sections = ['home', 'about', 'skills', 'projects', 'education'];
+      const sections = ['home', 'about', 'skills', 'projects', 'blog', 'education'];
       const current = sections.find(section => {
         const element = document.getElementById(section);
         if (element) {
@@ -69,7 +71,7 @@ function App() {
               FA
             </span>
             <div className="hidden md:flex space-x-8">
-              {['home', 'about', 'skills', 'projects', 'education'].map((section) => (
+              {['home', 'about', 'skills', 'projects', 'blog', 'education'].map((section) => (
                 <a
                   key={section}
                   href={`#${section}`}
@@ -262,6 +264,47 @@ function App() {
               image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
               link="https://github.com"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Blog Section */}
+      <section id="blog" className="py-32 relative">
+        <div className="container mx-auto px-4">
+          <SectionTitle>Latest Blog Posts</SectionTitle>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {blogData.posts.slice(0, 3).map((post) => (
+              <Link 
+                key={post.id}
+                to={`/blog/${post.slug}`}
+                className="group bg-gradient-to-br from-[#0F1A2E]/80 to-[#1B2C4B]/80 backdrop-blur-lg rounded-2xl overflow-hidden shadow-2xl border border-indigo-500/20 transform transition-all duration-300 hover:-translate-y-2 hover:shadow-indigo-500/20"
+              >
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={post.coverImage} 
+                    alt={post.title} 
+                    className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent opacity-60"></div>
+                </div>
+                <div className="p-6">
+                  <div className="text-sm text-gray-400 mb-2">{new Date(post.date).toLocaleDateString()}</div>
+                  <h3 className="text-xl font-semibold mb-2 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-300 line-clamp-3">{post.description}</p>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link
+              to="/blog"
+              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 rounded-full text-sm font-medium transition-colors"
+            >
+              <BookOpen className="w-4 h-4 mr-2" />
+              View All Posts
+            </Link>
           </div>
         </div>
       </section>
