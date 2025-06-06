@@ -253,14 +253,14 @@ function App() {
               link="https://github.com"
             />
             <ProjectCard
-              title="Bare Metal Server Configuration"
-              description="Successfully configured a bare metal server with RAID setup and VMware ESXi for virtual machine management."
+              title="DB Moodle - A platform to test SQL Skills. "
+              description="Built a SQL testing platform to assess and improve DBMS query writing skills for learners."
               image="https://images.unsplash.com/photo-1597852074816-d933c7d2b988?auto=format&fit=crop&q=80"
               link="https://github.com"
             />
             <ProjectCard
-              title="Office 365 Domain Migration"
-              description="Led a successful Office 365 domain migration project and implemented website hosting solutions."
+              title="Spectra Safe - AI powered Theatre Piracy Protection system "
+              description="Proposed an innovative cinema anti-piracy solution integrating IoT and Computer Vision techniques."
               image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80"
               link="https://github.com"
             />
